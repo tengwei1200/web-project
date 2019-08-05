@@ -1,0 +1,32 @@
+@import './variable.scss';
+@import './mixin.scss';
+
+.layout-index-box {
+
+    .el-header {
+        background: $bg-header;
+        color: $main-text;
+        @include tac;
+        @include lh60;
+    }
+    .el-aside {
+        width: 221px !important;
+        color: $main-text;
+        // @include tac;
+        .el-menu-vertical-demo {
+            width: 220px;
+            background: $bg-aside;
+            .el-menu {
+                background: $bg-aside;
+                .el-menu-item-group__title {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .el-main {
+        background: $bg-main;
+        color: $main-text;
+        @include tac;
+    }
+}

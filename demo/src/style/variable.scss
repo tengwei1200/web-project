@@ -1,0 +1,25 @@
+/** color变量 **/
+
+/* 产品色 */
+$stress-color : #ff2e33;  //强调色（文字）
+$stress-bg : #ff4044;     //强调色（按钮背景）
+$assist2 : #ff7010;       //辅助色2
+$assist3 : #3c83f7;       //辅助色3
+$assist4 : #ffeaea;       //辅助色4
+
+/* 中性色 */
+$main-text : #222222;     //主要文字
+$con-text : #666666;      //常规文字
+$sub-text : #999999;      //次要文字
+$ph-text : #aaaaaa;       //输入框内提示文字
+$grey-line : #eaeaea;     //灰底上分割线
+$white-line : #f2f2f2;    //白底上分割线
+$bg : #f6f6f6;            //背景色
+
+/* 渐变色 */
+$gradient-main : linear-gradient(90deg,#ff7754 0%,#ff3434 100%);     //主背景
+$gradient-ass : linear-gradient(90deg,#ff7f4e 0%,#ff5a1a 100%);      //辅助背景（线下）
+
+$bg-header : #b3c0d1;
+$bg-aside : #D3DCE6;
+$bg-main : #E9EEF3;
