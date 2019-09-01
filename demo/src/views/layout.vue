@@ -9,7 +9,7 @@
                 <keep-alive>
                     <router-view v-if="$route.meta.keepAlive">
                         <el-main>11111111333331</el-main>
-                    </router-view>
+                  </router-view>
                 </keep-alive>
                 <router-view v-if="!$route.meta.keepAlive">
                     <el-main>Main</el-main>
