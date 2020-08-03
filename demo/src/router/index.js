@@ -10,7 +10,7 @@ export default new Router({
           { path: '/carMange/carCount', name: '车辆总表', component: () => import ('../views/carMange/carCount') , meta: {keepAlive: true} },
           { path: '/carMange/secondCar', name: '过户车辆', component: () => import ('../views/carMange/secondCar') , meta: {keepAlive: true} },
           { path: '/carMange/realName', name: '实名认证', component: () => import ('../views/carMange/realName'), meta: {keepAlive: true} },
-          { path: '/carMange/productCar', name: '产线车辆', component: () => import ('../views/carMange/productCar') , meta: {keepAlive: true} },
+          { path: '/carMange/productCar', name: '地图测试', component: () => import ('../views/carMange/productCar') , meta: {keepAlive: true} },
         ]
       },
       {

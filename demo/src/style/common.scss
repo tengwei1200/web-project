@@ -2,31 +2,76 @@
 @import './mixin.scss';
 
 .layout-index-box {
-
-    .el-header {
-        background: $bg-header;
-        color: $main-text;
-        @include tac;
-        @include lh60;
-    }
-    .el-aside {
+    width: 100%;
+    height: 100%;
+    .el-container {
+      height: 100%;
+      .el-header {
+        height: 70px !important;
+        background: #464c5b;
+        color: #FFFFFF;
+        font-size: 20px;
+        @include tal;
+        @include lh70;
+      }
+      .el-aside {
         width: 221px !important;
         color: $main-text;
-        // @include tac;
-        .el-menu-vertical-demo {
-            width: 220px;
-            background: $bg-aside;
-            .el-menu {
-                background: $bg-aside;
-                .el-menu-item-group__title {
-                    padding: 0;
-                }
+        >div {
+          height: 100%;
+          .tac {
+            height: 100%;
+            >div {
+              height: 100%;
+              .el-menu-vertical-demo {
+                  width: 220px;
+                  height: 100%;
+                  background: #FFFFFF;
+                  .el-submenu {
+                    .el-submenu__title {
+                        color: #000000 !important;
+                        >i {
+                          color: #000000 !important;
+                        }
+                    }
+                  }
+                  .el-menu {
+                      background: #FFFFFF;
+                      .el-menu-item {
+                          color: #000000 !important;
+                      }
+                      .el-menu-item.is-active {
+                        color: #39f !important;
+                        border-right: 2px solid #39f;
+                      }
+                      .el-menu-item:focus, .el-menu-item:hover {
+                        color: #39f;
+                        background: #f3f3f3;
+                      }
+                      // .el-menu-item-group__title {
+                      //     padding: 0;
+                      // }
+                  }
+              }
             }
+          }
         }
-    }
-    .el-main {
-        background: $bg-main;
-        color: $main-text;
-        @include tac;
+      }
+      .el-main {
+        padding: 20px;
+        .main-layout {
+          width: 100%;
+          height: 100%;
+          color: $main-text;
+          background: #FFFFFF;
+          border-radius: 5px;
+          .m-form {
+            padding: 20px;
+          }
+          .tjBtn {
+            text-align: right;
+          }
+        }
+      }
     }
 }

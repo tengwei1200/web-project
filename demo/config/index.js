@@ -6,11 +6,25 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      "/": {
+          //target: "http://192.168.30.112:8080/KRX", // 本地
+          target: "http://127.0.0.1:8081/KRX", // tw
+          //  target: "http://192.168.30.60:8080/KRX", // FX
+          //target: "http://192.168.30.52:8083/KRX", // ch
+          //target: "http://192.168.30.107:8686/XYPRT-TSMS", // lq
+          //target: "http://192.168.30.81:8080/XYPRT-TSMS", // wcc
+          // target: "http://127.0.0.1:8989/XYPRT-TSMS", // zy
+          // target: "http://119.36.80.31:8081/XYPRT-TSMS", // zy
+          // target: "http://test.mzxxkj.com/XYPRT-TSMS", // zy
+          // target: "http://test.mzxxkj.com/KRX", // zy
+          changeOrigin: true,
+          ws: false
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

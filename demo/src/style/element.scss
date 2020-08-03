@@ -1,0 +1,6 @@
+// 无*号时，label缩进10px对齐
+.textLabel {
+  .el-form-item__label {
+          text-indent: 10px;
+      }
+}
